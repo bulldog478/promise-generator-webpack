@@ -2,8 +2,8 @@
 
 ## promise
 
-1. npm install babel-loader -D
-2. npm install babel-preset-es2015 -D
+① npm install babel-loader -D
+② npm install babel-preset-es2015 -D
 
 > webpack.config.js如下：
 
@@ -57,7 +57,7 @@ import _Promise from "babel-runtime/core-js/promise";
 
 看来babel-runtime可以给我一些线索，
 
-3. npm install babel-runtime -D 
+③ npm install babel-runtime -D 
 
 找到babel-runtime/core-js/promise，打开一看
 ```js
@@ -84,7 +84,7 @@ See the technical details section for more information on how this works and the
 ---
 看下突出的这行字，冰狗！，就是他来引用babel-runtime中的代码来解析Promise的。
 
-4. npm install babel-plugin-transform-runtime -D 
+④ npm install babel-plugin-transform-runtime -D 
 
 修改我们的webpack.config.js中对babel的配置：
 ```js
