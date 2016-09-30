@@ -3,7 +3,9 @@
 ## promise
 
 ① npm install babel-loader -D
+
 ② npm install babel-preset-es2015 -D
+
 
 > webpack.config.js如下：
 
