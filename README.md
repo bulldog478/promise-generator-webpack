@@ -56,7 +56,9 @@ import _Promise from "babel-runtime/core-js/promise";
 ```
 
 看来babel-runtime可以给我一些线索，
+
 3. npm install babel-runtime -D 
+
 找到babel-runtime/core-js/promise，打开一看
 ```js
 module.exports = { "default": require("core-js/library/fn/promise"), __esModule: true };
